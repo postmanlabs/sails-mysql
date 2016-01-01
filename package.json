@@ -1,6 +1,6 @@
 {
   "name": "sails-mysql",
-  "version": "0.10.12-postman.4",
+  "version": "0.10.12-postman.5",
   "description": "MySQL adapter for Sails.js",
   "main": "lib/adapter.js",
   "scripts": {
@@ -24,7 +24,7 @@
     "lodash": "~3.8.0",
     "mysql": "~2.6.1",
     "waterline-errors": "~0.10.0",
-    "waterline-sequel": "git+https://github.com/postmanlabs/waterline-sequel.git#v0.5.1-postman.1",
+    "waterline-sequel": "git+https://github.com/postmanlabs/waterline-sequel.git#v0.5.1-postman.2",
     "waterline-cursor": "~0.0.5"
   },
   "devDependencies": {

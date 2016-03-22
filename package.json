@@ -1,6 +1,6 @@
 {
   "name": "sails-mysql",
-  "version": "0.10.12-postman.6",
+  "version": "0.10.12-postman.7",
   "description": "MySQL adapter for Sails.js",
   "main": "lib/adapter.js",
   "scripts": {

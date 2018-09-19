@@ -14,7 +14,7 @@
 //
 // Transform a Waterline Query Statement into a SQL query.
 
-var MySQL = require('machinepack-mysql');
+var MySQL = require('../../../machinepack-mysql');
 
 module.exports = function compileStatement(statement, meta) {
   var report = MySQL.compileStatement({

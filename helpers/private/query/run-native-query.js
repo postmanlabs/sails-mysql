@@ -15,7 +15,7 @@
 // Run a native SQL query on an open connection and return the raw results.
 
 var _ = require('@sailshq/lodash');
-var MySQL = require('machinepack-mysql');
+var MySQL = require('../../../machinepack-mysql');
 
 module.exports = function runNativeQuery(connection, query, valuesToEscape, meta, cb) {
   MySQL.sendNativeQuery({

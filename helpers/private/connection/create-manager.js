@@ -14,7 +14,7 @@
 //
 // Create a new connection manager to use.
 
-var MySQL = require('machinepack-mysql');
+var MySQL = require('../../../machinepack-mysql');
 
 module.exports = function createManager(url, config) {
   var report = MySQL.createManager({

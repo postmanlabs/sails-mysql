@@ -14,7 +14,7 @@
 //
 // Destroys a connection manager.
 
-var MySQL = require('machinepack-mysql');
+var MySQL = require('../../../machinepack-mysql');
 
 module.exports = function destroyManager(manager, cb) {
   MySQL.destroyManager({

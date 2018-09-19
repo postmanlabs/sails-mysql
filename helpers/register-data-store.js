@@ -77,7 +77,7 @@ module.exports = require('machine').build({
   fn: function registerDataStore(inputs, exits) {
     // Dependencies
     var _ = require('@sailshq/lodash');
-    var MySQL = require('machinepack-mysql');
+    var MySQL = require('../machinepack-mysql');
     var Helpers = require('./private');
 
     // Validate that the datastore isn't already initialized

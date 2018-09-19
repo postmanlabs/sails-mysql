@@ -3,7 +3,7 @@
  */
 
 var _ = require('@sailshq/lodash');
-var MySQL = require('machinepack-mysql');
+var MySQL = require('../../machinepack-mysql');
 var adapter = require('../../lib/adapter');
 
 var Support = module.exports = {};

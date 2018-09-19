@@ -14,7 +14,7 @@
 //
 // Instantiate a new connection from the connection manager.
 
-var MySQL = require('machinepack-mysql');
+var MySQL = require('../../../machinepack-mysql');
 
 module.exports = function spawnConnection(datastore, cb) {
   // Validate datastore

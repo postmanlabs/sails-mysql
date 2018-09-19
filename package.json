@@ -4,8 +4,8 @@
   "description": "MySQL adapter for Sails.js",
   "main": "lib/adapter.js",
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha test/adapter/unit --recursive && node test/adapter/integration/runner",
-    "fasttest": "node ./node_modules/mocha/bin/mocha test/adapter/unit --recursive && node test/adapter/integration/runner",
+    "test": "node ./node_modules/mocha/bin/mocha test/adapter/unit --recursive && node test/adapter/integration/runner && node ./node_modules/mocha/bin/mocha test/machinepack-mysql --recursive",
+    "fasttest": "node ./node_modules/mocha/bin/mocha test/adapter/unit --recursive && node test/adapter/integration/runner && node ./node_modules/mocha/bin/mocha test/machinepack-mysql --recursive",
     "pretest": "nodever=`node -e \"console.log('\\`node -v\\`'[1]);\"` && if [ $nodever != \"0\" ]; then npm run lint; fi",
     "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 --ignore-pattern 'test/'",
     "docker": "docker-compose run adapter bash",
@@ -27,8 +27,10 @@
   "dependencies": {
     "@sailshq/lodash": "^3.10.2",
     "async": "2.0.1",
+    "debug": "4.0.1",
     "machine": "^15.0.0-21",
-    "machinepack-mysql": "^3.0.0",
+    "mysql": "2.16.0",
+    "waterline-sql-builder": "1.0.0",
     "waterline-utils": "^1.3.10"
   },
   "devDependencies": {

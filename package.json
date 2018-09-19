@@ -1,6 +1,15 @@
 {
-  "name": "sails-mysql",
+  "name": "@postman/sails-mysql",
   "version": "1.0.0",
+  "upstream": {
+    "name": "sails-mysql",
+    "version": "1.0.0",
+    "author": "Mike McNeil",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/balderdashy/sails-mysql.git"
+    }
+  },
   "description": "MySQL adapter for Sails.js",
   "main": "lib/adapter.js",
   "scripts": {
@@ -13,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/balderdashy/sails-mysql.git"
+    "url": "git://github.com/postmanlabs/sails-mysql.git"
   },
   "keywords": [
     "mysql",
@@ -21,7 +30,7 @@
     "waterline",
     "sails"
   ],
-  "author": "Mike McNeil",
+  "author": "Postman Labs <help@getpostman.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
@@ -51,5 +60,8 @@
       "unique",
       "autoIncrement.sequential"
     ]
+  },
+  "engines": {
+    "node": ">=6"
   }
 }

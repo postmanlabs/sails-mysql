@@ -4,7 +4,9 @@
   "description": "MySQL adapter for Sails.js",
   "main": "lib/adapter.js",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,8 @@
     "mysql": "~2.6.1",
     "waterline-errors": "~0.10.0",
     "waterline-sequel": "git+https://github.com/postmanlabs/waterline-sequel.git#v0.5.1-postman.3",
-    "waterline-cursor": "~0.0.5"
+    "waterline-cursor": "~0.0.5",
+    "snyk": "^1.528.0"
   },
   "devDependencies": {
     "mocha": "~1.13.0",
@@ -44,5 +47,6 @@
     "features": [
       "cross-adapter"
     ]
-  }
+  },
+  "snyk": true
 }
